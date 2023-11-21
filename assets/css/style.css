@@ -9,33 +9,27 @@
 
 main{}
 .slider{
-    max-width: 100%;
-    height: 100vh;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 20vh;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-.bgItem1, .bgItem2, .bgItem3, .bgItem4{
-    width: 100%;
-    height: 100vh;
+
+.slider .item{
+    flex-basis: 100%;
+    height: 100%;
+}
+.slider .bgItem1{
+    background: red;
+    display: block;
+}
+.slider .bgItem2{
+    background: yellow;
     position: absolute;
     top: 0;
-    /* left: 0; */
-}
-.bgItem1{
-    background: yellow;
     left: 0;
-}
-.bgItem2{ 
-    background: red;
-    left: 100%;
-}
-.bgItem3{
-    background: orange;
-    left: 200%;
-}
-.bgItem4{
-    background: green;
-    left: 300%;
+    display: none;
 }
 
 .order{
@@ -52,6 +46,7 @@ main{}
     font-size: 28px;
     margin: 20px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 

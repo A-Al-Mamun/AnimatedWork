@@ -1,15 +1,15 @@
 
+let preBtn = document.getElementsByClassName('left-btn')[0];
 
-let bg1 = document.getElementsByClassName('bgItem1')[0];
-let bg2 = document.getElementsByClassName('bgItem2')[0];
-let bg3 = document.getElementsByClassName('bgItem3')[0];
-let bg4 = document.getElementsByClassName('bgItem4')[0];
+let nextBtn = document.getElementsByClassName('right-btn')[0];
 
-let bg2Check = (bg2.style.left = 100 + '%');
-const nextbtn = () => {
-    if(bg1.style.left == 0){
-        bg2.style.left = 0;
-    } else if(bg2.style.left == bg2Check){
-        alert('Orange');
-    }
-}
+let slider = document.querySelectorAll('.slider');
+
+slider.forEach(item => {
+    // console.log(slider[item])
+    nextBtn.addEventListener('click', () => {
+        // item.style.display = 'block';
+        console.log(item);
+    });
+});
+
