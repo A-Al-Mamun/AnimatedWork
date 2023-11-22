@@ -29,3 +29,36 @@ preBtn.addEventListener('click', () => {
 })
 
 
+
+
+// Testimonial
+
+    let pre = document.getElementsByClassName('t-left')[0];
+    let testNext = document.getElementsByClassName('t-right')[0];
+
+    let testItem = document.querySelector('.test-items');
+    let testItems = document.querySelectorAll('.t-item');
+
+    let testIndex = 0;
+    testItems[testIndex].classList.add('test');
+
+    pre.addEventListener('click', () => {
+        testItems[testIndex].classList.remove('test');
+
+        testIndex = (testIndex === 0) ?  testItems.length - 1 : testIndex - 1;
+        testItems[testIndex].classList.add('test');
+
+        testItem.style.transform = `translateX(-${testIndex * 100}%)`;
+    })
+
+    testNext.addEventListener('click', () => {
+        testItems[testIndex].classList.remove('test');
+
+        testIndex = (testIndex === testItems.length - 1) ? 0 : testIndex + 1;
+        testItems[testIndex].classList.add('test');
+
+        testItem.style.transform = `translateX(-${testIndex * 100}%)`;
+    })
+
+
+

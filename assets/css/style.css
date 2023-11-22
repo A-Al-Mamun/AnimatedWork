@@ -70,3 +70,61 @@ main{}
     from{ top:0; transform: translateX(200px);}
     to{top:100vh;}
 }
+
+
+
+/* Testimonial Section Start */
+.testimonial{
+    width: 1160px;
+    margin: 0 auto;
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+}
+.testimonial h1{
+    text-align: center;
+}
+.test-items{
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+.t-item{
+    flex: 0 0 100%;
+    display: flex;
+
+}
+.t-item.test{
+    transform: translateX(0px);
+}
+.test-item{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #00000030;
+    margin: 15px ;
+}
+
+.test-item .t-Image{
+    text-align: center;
+}
+.test-item .t-Image img{
+    max-width: 50%;
+}
+.test-item .t-Content{}
+.test-item .t-Content p{
+    text-align: center;
+}
+
+.test-order{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.test-order .t-left,
+.t-right{
+    cursor: pointer;
+}
+/* Testimonial Section End */
